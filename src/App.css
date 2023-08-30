@@ -1,0 +1,129 @@
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+textarea {
+  box-sizing: border-box;
+  border-radius: 5px;
+  flex: 1;
+  font-size: 20px;
+  min-height: 250px;
+  margin: 20px auto;
+  width: 90%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.keyboardContainer {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  width: 90%;
+}
+.simple-keyboard.hg-theme-default {
+  display: inline-block;
+}
+.simple-keyboard-main.simple-keyboard {
+  background-color: transparent;
+  min-width: 640px;
+}
+.simple-keyboard-main.simple-keyboard .hg-row:first-child {
+  margin-bottom: 10px;
+}
+.simple-keyboard-arrows.simple-keyboard {
+  align-self: flex-end;
+  background-color: transparent;
+}
+.simple-keyboard .hg-button {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+.simple-keyboard .hg-button.selectedButton {
+  background-color: rgba(5, 25, 70, 0.53);
+  color: white;
+}
+.simple-keyboard .hg-button.emptySpace {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  pointer-events: none;
+}
+.simple-keyboard-arrows .hg-row {
+  justify-content: center;
+}
+.simple-keyboard-arrows .hg-button {
+  align-items: center;
+  display: flex;
+  flex-grow: 0;
+  justify-content: center;
+  width: 50px;
+}
+.controlArrows {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+.simple-keyboard-control.simple-keyboard {
+  background-color: transparent;
+}
+.simple-keyboard-control.simple-keyboard .hg-row:first-child {
+  margin-bottom: 10px;
+}
+.simple-keyboard-control .hg-button {
+  align-items: center;
+  display: flex;
+  flex-grow: 0;
+  justify-content: center;
+  width: 50px;
+}
+.numPad {
+  align-items: flex-end;
+  display: flex;
+}
+.simple-keyboard-numpad.simple-keyboard {
+  background-color: transparent;
+}
+.simple-keyboard-numpad.simple-keyboard {
+  width: 160px;
+}
+.simple-keyboard-numpad.simple-keyboard .hg-button {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  justify-content: center;
+  width: 50px;
+}
+.simple-keyboard-numpadEnd.simple-keyboard {
+  background: transparent;
+  margin: 0;
+  padding: 5px 5px 5px 0;
+  width: 50px;
+}
+.simple-keyboard-numpadEnd.simple-keyboard .hg-button {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.simple-keyboard-numpadEnd .hg-button.hg-standardBtn.hg-button-plus {
+  height: 85px;
+}
+.simple-keyboard-numpadEnd.simple-keyboard .hg-button.hg-button-enter {
+  height: 85px;
+}
+.simple-keyboard.hg-theme-default .hg-button.hg-selectedButton {
+  background: rgba(5, 25, 70, 0.53);
+  color: white;
+}
+.hg-button.hg-functionBtn.hg-button-space {
+  width: 350px;
+}
