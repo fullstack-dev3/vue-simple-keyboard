@@ -1,2 +1,2 @@
-# vue-simple-keyboard
+# Simple Keyboard
 Simple Keyboard developed by Vue.js
